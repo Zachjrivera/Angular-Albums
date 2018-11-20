@@ -1,0 +1,42 @@
+
+.table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.btnplus, .btnminus{
+    font-size: 15px;
+}
+
+
+thead{
+    background-color: aqua; 
+}
+.img{
+    height:200px;
+}
+
+.totalprice{
+    font-size: 32px;
+    padding: 50px;
+}
+
+#name{
+   background-color: lightgray;
+    padding:40px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+
+}
+
+#price, #details{
+    padding:40px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#quantity{
+    padding:40px;
+    background-color: lightgray;
+}

@@ -1,0 +1,12 @@
+.Title{
+    text-align: center;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 64px;
+    background-image: url("https://media.giphy.com/media/FoVi0LDjy1XS8/giphy.gif");
+    background-size: cover;
+    padding: 30px;
+
+}
+*{
+    background-color: darkgray;
+}
