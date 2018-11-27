@@ -1,12 +1,36 @@
-.Title{
+.container{
     text-align: center;
-    font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 64px;
-    background-image: url("https://media.giphy.com/media/FoVi0LDjy1XS8/giphy.gif");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
     background-size: cover;
     padding: 30px;
+  
 
 }
-*{
-    background-color: darkgray;
+
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #607d8b;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+
+
+@media screen and (max-width: 600px){
+	.maindiv{
+		float: none;
+		width: 80%;
+    }
 }

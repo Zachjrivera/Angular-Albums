@@ -1,0 +1,20 @@
+<table class="table ">
+    <thead>
+      <tr id="labels">
+       
+        <th>Album</th>
+        <th>Name</th>
+        <th colspan="4">Sample    </th>
+      
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let album of albums">
+          
+          <td><img src="{{album.product_img}}" class="img" /></td>
+          <td id="name">{{album.product_name}}</td>
+          <td id="samples"><audio controls> <source src="{{album.sample_song}}" type="audio/mpeg"></audio></td>
+        
+        </tr>
+    </tbody>
+</table>

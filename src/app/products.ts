@@ -5,5 +5,7 @@ export interface IProducts {
     product_price : number;
     product_details : string;
     product_quantity : number;
+    sample_songnname : string;
+    sample_song : string;
 }
 

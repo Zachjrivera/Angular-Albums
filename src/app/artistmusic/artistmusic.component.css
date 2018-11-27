@@ -1,0 +1,24 @@
+#labels{
+    padding-left:40 px;
+    padding-right: 40px;
+    background-color: blue;
+    text-align: center;
+   
+}
+
+.table{
+    margin-left:auto; 
+    margin-right:auto;
+    table-layout: fixed;
+    border: 2px solid; 
+}
+
+td{
+    padding: 20px;
+}
+
+*{
+    background-color: black;
+    color: green;
+
+}

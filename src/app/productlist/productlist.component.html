@@ -1,10 +1,12 @@
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-</head>
 
+
+<nav>
+  <a routerLink="/music">Give a Listen</a>
+  <router-outlet></router-outlet>
+</nav>
 <table class="table ">
   <thead>
-    <tr>
+    <tr id="labels">
      
       <th>Album</th>
       <th>Name</th>
@@ -14,28 +16,24 @@
     </tr>
   </thead>
   <tbody>
-      <tr *ngFor="let list of products">
+      <tr *ngFor="let album of albums">
         
-        <td><img src="{{list.product_img}}" class="img" /></td>
-        <td id="name">{{list.product_name}}</td>
-        <td id="price">{{list.product_price}}</td>
+        <td><img src="{{album.product_img}}" class="img" /></td>
+        <td id="name">{{album.product_name}}</td>
+        <td id="price">{{album.product_price}}</td>
         <td id="quantity">
-          {{list.product_quantity}}
-          <button class="btnplus" (click)="add(list.product_id)"><b id="bold" >+</b></button>
-          <button class="btnminus" (click)="del(list.product_id)"><b id="bold" >-</b></button>
+          {{album.product_quantity}}
+          <button class="btnplus" (click)="add(album.product_id)"><b id="bold" >+</b></button>&nbsp;
+          <button class="btnminus" (click)="del(album.product_id)"><b id="bold" >-</b></button>&nbsp;
         </td>
         <td id="details">
-          <button class="btndetails" (click)="getpopup(list)">Show Details</button> &nbsp;
+          <button class="btndetails" (click)="getpopup(album)">Show Details</button> 
           
         </td>
       </tr>
   </tbody>
-  <tfoot>
-    <tr>
-      <td class="totalprice">Total Price</td>
-      <td colspan="0" class="totalprice">{{total | currency: 'USD' }}</td>
-    </tr>
-  </tfoot>
 </table>
-
-<app-productdetails [list] = "selectedProduct"></app-productdetails>
+    
+     <h2>Total Price</h2>
+      <p class="totalprice">{{total | currency: 'USD' }}</p>
+<app-productdetails id="details"[list] = "selectedProduct"></app-productdetails>

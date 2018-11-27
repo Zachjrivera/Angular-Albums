@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {Album} from '../album';
 import { Subject } from 'rxjs';
 declare var $: any;
 
