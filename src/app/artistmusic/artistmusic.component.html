@@ -13,8 +13,10 @@
           
           <td><img src="{{album.product_img}}" class="img" /></td>
           <td id="name">{{album.product_name}}</td>
-          <td id="samples"><audio controls> <source src="{{album.sample_song}}" type="audio/mpeg"></audio></td>
+          <td></td>
         
         </tr>
     </tbody>
 </table>
+
+<button (click)="Playaudio()">Play</button>

@@ -23,7 +23,12 @@ export class ArtistmusicComponent implements OnInit {
     this.albumService.getAlbums().subscribe(albums => this.albums = albums)
   }
 
-
+  playaudio(): void {
+    let audio = new Audio();
+    audio.src = "../songs/acidrain.mp3";
+    audio.load();
+    audio.play();
+  }
  
   
 }
